@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 2rem;
+    }
+    .navbar {
+      background-color: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      font-weight: 800;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+    .navbar a {
+      color: #fff;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .navbar a:hover {
+      color: #58a6ff;
+    }
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #161b22;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    h1 {
+      color: #58a6ff;
+      margin-bottom: 1rem;
+    }
+    p {
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+        <span class="logo-icon">⏳</span>
+        MyWorks</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>MEMEIFY – AI-Powered Meme Generator</h1>
+    <p>
+      MEMEIFY is a full-stack web application designed to simplify and enhance the process of meme creation. The platform allows users to select from a wide range of preloaded templates or upload their own images to create memes.
+    </p>
+    <p>
+      One of its standout features is the AI-powered caption generation: users can describe an image, and the system uses backend AI logic to suggest humorous or contextually relevant meme texts.
+    </p>
+    <p>
+      The frontend, developed using React, provides an interactive and visually appealing interface, while the backend, built with Flask, handles API requests and AI caption processing.
+    </p>
+    <p>
+      Users can view suggestions in real-time, customize text overlays, and download the final meme. The app also supports dynamic image rendering, basic styling controls (like font and color), and a responsive design for both desktop and mobile use.
+    </p>
+  </div>
+</body>
+</html>

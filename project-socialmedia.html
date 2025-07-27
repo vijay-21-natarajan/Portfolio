@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Web App Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 2rem;
+    }
+    .navbar {
+      background-color: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      font-weight: 800;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+    .navbar a {
+      color: #fff;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .navbar a:hover {
+      color: #58a6ff;
+    }
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #161b22;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    h1 {
+      color: #58a6ff;
+      margin-bottom: 1rem;
+    }
+    p {
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+        <span class="logo-icon">⏳</span>
+        MyWorks</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Social Media Web App</h1>
+    <p>
+      This project is a scalable social media web platform modeled after common features found in popular social networks. It supports essential functionalities such as user registration and login, user profile management, and an interactive homepage feed.
+    </p>
+    <p>
+      One of the core technical highlights is the friend suggestion system, which uses graph data structures and adjacency lists to identify mutual connections and recommend new friends to users.
+    </p>
+    <p>
+      The backend is structured using Flask and modular Python scripts to manage routes, models, and utilities. Data models define user relationships, account metadata, and message storage.
+    </p>
+    <p>
+      The frontend is likely served with HTML/CSS templates and uses AJAX or similar technologies for dynamic updates. The platform aims to simulate real-world social behavior online, offering a clean and functional interface, reliable session management, and real-time features like messaging.
+    </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | VIJAY NATARAJAN R</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --text: #c9d1d9;
+      --accent: #58a6ff;
+      --hover: #1f6feb;
+      --muted: #8b949e;
+      --card: #161b22;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .navbar .logo-icon { font-size: 1.2rem; }
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .contact-btn {
+      background: #1a1a1a;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .contact-btn:hover { background: var(--hover); color: #fff; }
+
+    .section {
+      max-width: 1000px;
+      margin: 160px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      padding: 1rem;
+    }
+
+    .about-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      animation: fadeSlideIn 1s ease-out;
+    }
+
+    .about-block img {
+      width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .about-text h2 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    @keyframes fadeSlideIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <span class="logo-icon">⏳</span>
+      MyWorks
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+    </div>
+    <a href="contact.html" class="contact-btn">Contact Me</a>
+  </div>
+
+  <div class="section">
+    <div class="about-block">
+      <img src="coding.jpg" alt="Coding session" />
+      <div class="about-text">
+        <h2>Who I Am</h2>
+        <p>I'm Vijay, a third-year B.Tech Information Technology student driven by a passion for developing impactful software. My work spans frontend and backend development, with a focus on clean code, usability, and performance. I thrive in collaborative environments and enjoy building tools that solve real-world problems.</p>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <img src="hackathon.jpg" alt="Hackathon experience" />
+      <div class="about-text">
+        <h2>What I Love</h2>
+        <p>I love challenges that make me think deeply. Hackathons, open source collaborations, and academic projects push me to innovate and learn. My comfort zones include Python, Flask, React, and deploying apps using tools like GitHub and Netlify.</p>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <img src="mentoring.jpg" alt="Mentoring peers" />
+      <div class="about-text">
+        <h2>Beyond Code</h2>
+        <p>Beyond technical work, I mentor junior students in DSA and tech stacks, speak at college meetups, and engage with communities to grow together. I'm also interested in tech writing and enjoy learning about design systems and developer productivity tools.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

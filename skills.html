@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | VIJAY NATARAJAN R</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --text: #c9d1d9;
+      --accent: #58a6ff;
+      --card: #161b22;
+      --hover: #1f6feb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .navbar .logo-icon {
+      font-size: 1.2rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .contact-btn {
+      background: #1a1a1a;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background: var(--hover);
+      color: #fff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 150px auto 0;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: var(--accent);
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <span class="logo-icon">⏳</span>
+      MyWorks
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+    </div>
+    <a href="contact.html" class="contact-btn">Contact Me</a>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>SQL (MySQL)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Technologies & Tools</h2>
+      <ul>
+        <li>Flask</li>
+        <li>React</li>
+        <li>Oracle</li>
+        <li>Git</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Course Work</h2>
+      <ul>
+        <li>Data Structures & Algorithms</li>
+        <li>Database Management Systems</li>
+        <li>Software Design Patterns</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Adaptability</li>
+        <li>Time Management</li>
+        <li>Teamwork</li>
+        <li>Communication</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
